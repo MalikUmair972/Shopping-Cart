@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Add to cart</title>
+</head>
+<body class="bg-gray-600">
+    <div class="container m-8 ">
+        <div class="cart flex flex-col justify-end items-end relative">
+            <img class="w-12 h-12 m-6 bg-blue-500 pt-2" src="https://www.clker.com/cliparts/X/U/F/3/N/2/shopping-cart-logo.svg" alt="">
+            <span id="increment" class="absolute w-8 pl-2 top-6 right-16 bg-black text-white rounded-full">00</span>
+            <button onclick="clearCart()" class=" w-32 h-8 border-2 border-black bg-white rounded-full">Remove cart</button>
+        </div>
+        <h1 class="text-4xl text-white font-bold text-center pb-4 -mt-8">Products</h1>
+        <div class="product flex flex-row pl-20">
+            <div class="headphone w-72 h-96 bg-blue-500 rounded-xl p-2 flex flex-col justify-center items-center ml-6">
+                <img class="w-64 rounded-xl" src="https://pk.hellofaster.com/cdn/shop/files/S6-headphone.png?v=1722931047" alt="">
+                <h1 class="text-xl font-bold text-white">Logitic Headphone</h1>
+                <p>This is logitic headphone for gaming and calling</p>
+                <button onclick="addCart()" class=" w-44 h-8 border-2 border-black bg-white rounded-full">Add to Cart</button>
+            </div>
+            <div class="headphone w-72 h-96 bg-blue-500 rounded-xl p-2 flex flex-col justify-center items-center ml-6">
+                <img class="w-64 rounded-xl" src="https://images.meesho.com/images/products/119660669/74mpq_512.webp" alt="">
+                <h1 class="text-xl font-bold text-white">Gaming Mouse</h1>
+                <p>This is mouse for gaming and editing</p>
+                <button onclick="addCart()" class=" w-44 h-8 border-2 border-black bg-white rounded-full">Add to Cart</button>
+            </div>
+            <div class="headphone w-72 h-96 bg-blue-500 rounded-xl p-2 flex flex-col justify-center items-center ml-6">
+                <img class="w-64 rounded-xl" src="https://redragonzone.pk/cdn/shop/products/PSNoTxfg6QeECNxxE6gi6FWfcTCADo6GNi8O97V6_2048x.png?v=1627735652" alt="">
+                <h1 class="text-xl font-bold text-white">Gaming Keyboard</h1>
+                <p>This is keyboard for gaming</p>
+                <button onclick="addCart()" class=" w-44 h-8 border-2 border-black bg-white rounded-full">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
